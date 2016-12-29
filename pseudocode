@@ -1,0 +1,39 @@
+Créer un prog qui crypte un message avec un décalage de 3 lettres 
+Créer un algo qui, quand on lui donne un texte et un nombre créé un message crypté 
+
+Variable Nombre (N), Clef (c) et Lettre (L) 
+ 
+A => 1			P => 16	
+B => 2			Q => 17
+C => 3			R => 18
+D => 4			S => 19
+E => 5			T => 20
+F => 6			U => 21
+G => 7			V => 22
+H => 8			W => 23
+I => 9			X => 24
+J => 10			Y => 25
+K => 11			Z => 26
+L => 12
+M => 13
+N => 14
+O => 15
+
+Clef = 3
+
+l=(n-c)mod26
+
+Début Ecrire "Entrez votre message ici"
+Lire
+Pour N allant de 1 à length tableau Faire
+Si non Recommencer de 1
+Prendre C = 3ème caractère du Texte
+Calculer le rang R de C dans l'alphabet
+Calculer R2 = ( R + Décalage ) 
+Ecrire la lettre de rang R2 dans l'alphabet
+Fin de Pour
+Fin de Si
+Fin
+
+
+
